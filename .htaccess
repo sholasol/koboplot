@@ -1,0 +1,50 @@
+RewriteEngine On
+
+RewriteRule ^index?$ index.php
+RewriteRule ^contact?$ contact.php
+RewriteRule ^about?$ about.php
+RewriteRule ^login?$ login.php
+RewriteRule ^register?$ register.php
+RewriteRule ^list?$ list.php
+RewriteRule ^offplan?$ offplan.php
+RewriteRule ^own?$ own.php
+RewriteRule ^logout?$ logout.php
+RewriteRule ^search?$ search.php
+#RewriteRule ^login/([^/\.]+)?$ login.php?id=$1
+
+RewriteRule ^listing/([^/\.]+)/([^/\.]+)?$  listing.php?loc=$1&cat=$2
+
+#Admin
+RewriteRule ^member/Admin/home?$ member/Admin/home.php
+RewriteRule ^member/Admin/cust?$ member/Admin/cust.php
+RewriteRule ^member/Admin/project?$ member/Admin/project.php
+RewriteRule ^member/Admin/koboplot?$ member/Admin/koboplot.php
+RewriteRule ^member/Admin/kobounit?$ member/Admin/kobounit.php
+RewriteRule ^member/Admin/transaction?$ member/Admin/transaction.php
+RewriteRule ^member/Admin/manageAg?$ member/Admin/manageAg.php
+RewriteRule ^member/Admin/manageU?$ member/Admin/manageU.php
+RewriteRule ^member/Admin/detail?$ member/Admin/detail.php
+
+
+#MEMBER AREAS
+
+#CLIENTS
+RewriteRule ^member/client/project?$ member/client/project.php
+RewriteRule ^member/client/home?$ member/client/home.php
+RewriteRule ^member/client/message?$ member/client/message.php
+RewriteRule ^member/client/invest?$ member/client/invest.php
+RewriteRule ^member/client/transff?$ member/client/transff.php
+RewriteRule ^member/client/sub?$ member/client/sub.php
+RewriteRule ^member/client/detail?$ member/client/detail.php
+RewriteRule ^member/client/transfer?$ member/client/transfer.php
+RewriteRule ^member/client/transferd?$ member/client/transferd.php
+RewriteRule ^member/client/transaction?$ member/client/transaction.php
+RewriteRule ^member/client/profile?$ member/client/profile.php
+RewriteRule ^member/client/password?$ member/client/password.php
+RewriteRule ^member/client/subscription?$ member/client/subscription.php
+RewriteRule ^member/client/transfer?$ member/client/transfer.php
+RewriteRule ^member/client/analytics?$ member/client/analytics.php
+RewriteRule ^member/client/view2/([^/\.]+)?$ member/client/view2.php?id=$1
+RewriteRule ^member/client/koboplot?$ member/client/koboplot.php
+RewriteRule ^member/client/kobounit?$ member/client/kobounit.php
+RewriteRule ^member/client/subscribe?$ member/client/subscribe.php
